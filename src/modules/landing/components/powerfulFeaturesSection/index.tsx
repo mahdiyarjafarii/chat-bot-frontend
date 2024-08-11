@@ -234,13 +234,14 @@ const PowerfulFeaturesSection = () => {
                         cards.map((card, indx) => (
                             <div
                                 key={indx}
-                                className="flex flex-col items-start rounded-[10px]  border border-blue-500 px-[13px] py-[18px]"
+                                className="flex flex-col items-start rounded-[10px]  border  px-[13px] py-[18px]"
                                 style={{
                                     boxShadow:
                                         indx === activeIndex
                                             ? "rgba(59, 130, 246, 0.74) 1px 4px 10px 0px, rgb(46 88 240 / 63%) 0px 2px"
                                             : "unset",
                                     transition: "all 0.5s ease-in-out",
+                                    background:"linear-gradient(#fff,#fafafa) padding-box,linear-gradient(120deg,#d4d4d8,#f4f4f5,#d4d4d8) border-box"
                                 }}
                             >
                                 {card.Icon}

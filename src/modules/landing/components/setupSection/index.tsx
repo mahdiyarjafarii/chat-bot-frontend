@@ -3,17 +3,20 @@ import { Activity, Box2, ChemicalGlass, DollarCircle, Login, Magicpen } from "ic
 const SetupSection = ()=>{
     return (
         <>
-            <div className="container relative mx-auto h-auto overflow-hidden  px-4  text-center 2xl:px-20 mt-14">
+            <div className="container relative mx-auto h-auto overflow-hidden  px-4  text-center 2xl:px-20 pt-[100px]">
             <div className="my-10 md:mt-10">
                 <h2 className="text-3xl md:text-5xl">
-                   چت بات بدون کد و دانش برنامه نویسی
+                   چت بات بدون
+                   <span className="gradient-h2 is-v2">
+                   &nbsp;دانش برنامه نویسی
+                    </span>
                 </h2>
                 <h3 className="mt-1 text-[12px] md:mt-3 md:text-[16px]">
                 راه اندازی فقط در کمتر از 2 دقیقه
                 </h3>
             </div>
 
-            <div className="lg:w-[60rem] grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 mt-4  mx-auto ">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 mt-4  mx-auto ">
                     <div className="relative flex flex-col bg-clip-border rounded-xl text-gray-700 bg-zinc-100">
                         <div className="absolute left-4 top-3">
                         <Box2
