@@ -22,7 +22,7 @@ const CostSection = () => {
                     کسب‌وکار شما
                 </h2>
                 <h3 className="mt-1 text-[12px] md:mt-3 md:text-[16px]">
-                راه اندازی فقط در کمتر از 2 دقیقه
+                از مزایای بی‌نظیر دستیار هوش مصنوعی بهره‌مند شوید
                 </h3>
             </div>
            <div className="grid gap-y-10 gap-x-10 md:grid-cols-2 lg:grid-cols-4 mt-16">

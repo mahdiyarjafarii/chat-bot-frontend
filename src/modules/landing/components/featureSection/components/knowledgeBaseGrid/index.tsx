@@ -17,7 +17,7 @@ const KnowledgeBaseGrid = () => {
         }
     }, [isInView])
     return (
-        <div className="grid w-[80%] grid-cols-2 gap-4 py-20" ref={mainRef}>
+        <div className="grid w-[80%] grid-cols-1 md:grid-cols-2 gap-4 py-20" ref={mainRef}>
             <motion.div
                 variants={{
                     hidden: { opacity: 0, x: "+20%" },
@@ -26,6 +26,9 @@ const KnowledgeBaseGrid = () => {
                 initial="hidden"
                 animate={animController}
                 transition={{ duration: 1 }}
+                style={{
+                    background:"linear-gradient(#fff,#fafafa) padding-box,linear-gradient(120deg,#d4d4d8,#f4f4f5,#d4d4d8) border-box"
+                }}
                 className="flex items-center justify-between rounded-md border border-gray-300 p-4 shadow-md"
             >
                 <div>
@@ -50,6 +53,9 @@ const KnowledgeBaseGrid = () => {
                 initial="hidden"
                 animate={animController}
                 transition={{ duration: 1 }}
+                style={{
+                    background:"linear-gradient(#fff,#fafafa) padding-box,linear-gradient(120deg,#d4d4d8,#f4f4f5,#d4d4d8) border-box"
+                }}
                 className="flex items-center justify-between rounded-md border border-gray-300 p-4 shadow-md"
             >
                 <div>
