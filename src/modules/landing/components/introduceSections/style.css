@@ -11,28 +11,33 @@
   width: 55%;
   max-width: 600px;
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 3px;
   &:after {
     content: "";
     position: absolute;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 999;
-    height: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    z-index: 1;
+    height: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     background-position: 0% 0%;
     background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
     background-size: 500% auto;
     animation: gradient 3s linear infinite;
   }
 }
+@media only screen and (max-width: 768px) {
+  .webflow-style-input {
+    width: 85%; /* Change width to 80% for mobile devices */
+  }
+}
 
 .webflow-style-input input {
   flex-grow: 1;
-  color: white;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.2rem;
   line-height: 2.4rem;
   vertical-align: middle;
   &::-webkit-input-placeholder {

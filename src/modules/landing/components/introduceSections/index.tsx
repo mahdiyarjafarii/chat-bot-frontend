@@ -11,9 +11,10 @@ import { Calendar } from "iconsax-react"
 import "./style.css"
 
 const IntroduceSections = () => {
-    const [inputValue, setInputValue] = useState("")
-    const [loading, setLoading] = useState(false)
-    const SelectModal = useSelectModal()
+    const [inputValue, setInputValue] = useState("");
+    const [loading, setLoading] = useState(false);
+    const SelectModal = useSelectModal();
+
 
     const validateInput = () => {
         // Check if input value is empty
@@ -106,14 +107,14 @@ const IntroduceSections = () => {
                     </p>
                             </div>
                             <div className="mt-[32px] flex flex-col items-center justify-center gap-4">
-                <div className="webflow-style-input">
+                            <div className="webflow-style-input w-full">
                     <input
                         type="text"
                         className="input-url"
                         onChange={handleInputChange}
-                        placeholder="آدرس وبسایت مورد نظرتان وارد کنید ..."
+                        placeholder={"ادرس وب سایت شما"} 
                     />
-</div>
+                            </div>
                     <div className="flex flex-col-reverse gap-2 md:flex-row md:gap-3">
                         <button
                             className="btn-meet"
